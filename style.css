@@ -305,6 +305,7 @@ a:hover {
     max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
+    height: 40px;
 }
 
 .navbar-brand img[src$=svg] {
@@ -837,6 +838,41 @@ h4 {
         padding-left: 0;
         padding-right: 0;
     }
+}
+                                                            /*Modifications*/
+.logo {
+    width: 100px; ;  
+}
+
+#metiers {
+    font-size: 1.6em;
+    font-weight: 600;
+}
+address {
+    text-align: center;
+    font-size: 1.5em;
+    color: #000;
+}
+
+.map {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.text-center-modifs {
+    font-size: 18px;
+    text-align: center;
+}
+
+blockquote p {
+    font-size: 20px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.img-responsive {
+    display: inline;
 }
 
 @media (max-width: 992px) and (min-width: 768px) {
