@@ -133,7 +133,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-    color: rgba(255, 255, 255, .6);
+    color: #FFF;
 }
 
 .d-bloc .a-btn:hover,
@@ -772,15 +772,15 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #8F3911;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FDBF6D!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #8F3911;
     color: #FFFFFF!important;
 }
 
@@ -875,6 +875,10 @@ blockquote p {
     display: inline;
 }
 
+.icon-md::before {
+    content:"";
+    padding-right: 10px;
+}
 @media (max-width: 992px) and (min-width: 768px) {
     .navbar .nav {
         max-width: 80%
