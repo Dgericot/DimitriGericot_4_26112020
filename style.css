@@ -823,7 +823,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 
 @media (max-width: 1024px) {
@@ -856,8 +856,12 @@ address {
 
 .map {
     display: flex;
-    justify-content: center;
     margin-top: 25px;
+}
+iframe {
+    width: 600px;
+    height: 450px;
+    border: 0;
 }
 
 .text-center-modifs {
@@ -870,7 +874,9 @@ blockquote p {
     padding: 20px;
     margin-top: 20px;
 }
-
+.blockquote-footer {
+    color: #000;
+}
 .img-responsive {
     display: inline;
 }
