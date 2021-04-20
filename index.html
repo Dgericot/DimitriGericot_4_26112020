@@ -41,7 +41,7 @@
                 <a class="navbar-brand" href="index.html"
                   ><img
                     src="img/la-chouette-agence.png"
-                    alt="logo de la Chouette agence"
+                    alt="Bannière de la Chouette agence"
                 /></a>
                 <button
                   id="nav-toggle"
@@ -237,7 +237,7 @@
                 <img
                   src="img/journaux.jpg"
                   class="img-responsive portfolio-thumb"
-                  alt="Le journal lyonnais"
+                  alt="Journaux locaux empilés"
                 />
               </a>
               <h3 class="mg-md text-center">
@@ -259,7 +259,7 @@
                 <img
                   src="img/photographer.jpg"
                   class="img-responsive portfolio-thumb"
-                  alt="photographes"
+                  alt="Fille prenant une photo"
                 />
               </a>
               <h3 class="mg-md text-center">
@@ -283,7 +283,7 @@
                 <img
                   src="img/site-voyageur.jpg"
                   class="img-responsive portfolio-thumb"
-                  alt="site pour voyageur"
+                  alt="Equipements numériques professionnels"
                 />
               </a>
               <h3 class="mg-md text-center">
@@ -305,7 +305,7 @@
                 <img
                   src="img/agence-de-mariage.jpg"
                   class="img-responsive portfolio-thumb"
-                  alt="site pour une agence de mariage"
+                  alt="Deux personnes organisant un mariage"
                 />
               </a>
               <h3 class="mg-md text-center">
@@ -351,9 +351,11 @@
               </div>
             </div>
           </div>
+        
           <!-- bloc-6 END -->
           <div class="bloc bgc-white l-bloc" id="bloc-7">
             <div class="container bloc-lg">
+              <div id="contact"></div>
               <div class="row">
                 <div class="col-sm-6">
                   <form
@@ -363,43 +365,30 @@
                     fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"
                   >
                     <div class="form-group">
-                      <label> Nom </label>
-                      <input id="name" class="form-control" required />
+                      <label for="name"> 
+                        Nom                        
+                      </label>
+                      <input id="name" name="name" type="text" class="form-control" required />
                     </div>
                     <div class="form-group">
-                      <label> Adresse email </label>
-                      <input
-                        id="email"
-                        class="form-control"
-                        type="email"
-                        required
-                      />
+                      <label for="email"> 
+                        Adresse email 
+                      </label>
+                      <input id="email" name="email" type="email" class="form-control" required />            
                     </div>
                     <div class="form-group">
-                      <label> Comment nous avez-vous connu ? </label>
-                      <input
-                        class="form-control"
-                        type="email"
-                        required
-                        id="input_504"
-                      />
+                      <label for="text">
+                        Comment nous avez-vous connu ? 
+                      </label>
+                      <input id= "text" name="text" type="text" class="form-control" required />
                     </div>
                     <div class="form-group">
-                      <label>
+                      <label for="message">
                         Brief de votre projet (Ajoutez autant de détails que
-                        nécessaire)<br /> </label
-                      ><textarea
-                        id="message"
-                        class="form-control"
-                        rows="4"
-                        cols="50"
-                        required
-                      ></textarea>
+                        nécessaire)<br> </label>
+                      <textarea id="message" name="message" class="form-control" rows="4" cols="50" required></textarea>                  
                     </div>
-                    <button
-                      class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine"
-                      type="submit"
-                    >
+                    <button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
                       Envoyer
                     </button>
                   </form>
