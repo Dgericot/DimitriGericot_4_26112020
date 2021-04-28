@@ -3,8 +3,6 @@ body {
     padding: 0;
     background: #FFF;
     overflow-x: hidden;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
 a,
@@ -32,9 +30,6 @@ a:hover {
     clear: both;
     background: 50% 50% no-repeat;
     padding: 0 50px;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     position: relative;
 }
@@ -66,9 +61,6 @@ a:hover {
 .bg-tr-edge,
 .bg-br-edge,
 .bg-repeat {
-    -webkit-background-size: auto!important;
-    -moz-background-size: auto!important;
-    -o-background-size: auto!important;
     background-size: auto!important;
 }
 
@@ -333,10 +325,14 @@ a:hover {
     text-align: inherit;
 }
 
-.nav > li a:hover,
+.nav > li a:hover {
+    background: transparent;
+}     
+
 .nav > li a:focus {
-    background: lightgrey;
-}           
+    background: #364577;
+    color: #FFFFFF!important;
+}
 
 .navbar-toggle {
     margin: 10px 10px 0 0;
@@ -345,6 +341,10 @@ a:hover {
 
 .navbar-toggle:hover {
     background: transparent!important;
+}
+
+.navbar-toggle:focus {
+    background: #364577;
 }
 
 .navbar-toggle .icon-bar {
@@ -369,8 +369,8 @@ a:hover {
         top: 50%;
         right: 20px;
         transform: translate(0, -50%);
-        -webkit-transform: translateY(-50%);
     }
+
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
         color: #484848;
@@ -477,7 +477,7 @@ button {
 }
 
 .icon-md {
-    font-size: 30px!important;
+    font-size: 25px!important;
 }
 
 .icon-lg {
@@ -552,12 +552,10 @@ a[data-lightbox]:hover::before {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
 }
 
 a[data-lightbox]:hover img {
     opacity: 0.6;
-    -webkit-animation-fill-mode: none;
     animation-fill-mode: none;
 }
 
@@ -785,7 +783,7 @@ h4 {
 }
 
 .btn-atomic-tangerine:focus {
-    background: lightgrey;
+    background: #364577;
 }
 
 .btn-atomic-tangerine:hover {
@@ -798,7 +796,7 @@ h4 {
 }
 
 .ltc-white:focus {
-    background: lightgrey;
+    background: #364577;
 }
 
 .ltc-white:hover {
@@ -877,30 +875,35 @@ blockquote p {
     padding: 20px;
     margin-top: 20px;
 }
+
 .blockquote-footer {
     color: #000;
 }
+
 .img-responsive {
     display: inline;
 }
 
 .icon-md::before {
     content:"";
-    padding-right: 10px;
+    padding-right: 4px;
 }
 
-.icon-md::after {
-    content: "";
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+.footer-p {
+    margin-left: 15px;
 }
-span .icon-md {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+.footer-text span {
+    font-family: "helvetica";
+}
+
+.social:focus {
+    background: #364577;
 }
 
 .formulaire-p {
     margin-bottom: 20px;
 }
-
 
 @media screen and (max-width: 768px) {
     .formulaire-titre {
@@ -923,13 +926,13 @@ span .icon-md {
     }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -947,10 +950,7 @@ span .icon-md {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
+
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -959,8 +959,6 @@ span .icon-md {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 
@@ -995,8 +993,6 @@ span .icon-md {
     .site-navigation {
         position: inherit;
         transform: none;
-        -webkit-transform: none;
-        -ms-transform: none;
     }
     .nav > li {
         margin-top: 0;
@@ -1033,7 +1029,6 @@ span .icon-md {
     .navbar-collapse {
         padding: 0;
         overflow-x: hidden;
-        -webkit-box-shadow: none;
         box-shadow: none;
     }
     .navbar-brand img {
